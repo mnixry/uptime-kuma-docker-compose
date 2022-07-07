@@ -1,7 +1,9 @@
 version: "3.9"
 
 volumes:
-  kuma_data: {}
+  kuma_data: 
+    driver_opts:
+      size: 2Gi
 
 services:
   kuma:
